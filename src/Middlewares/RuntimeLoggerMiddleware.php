@@ -2,7 +2,7 @@
 
 namespace RuntimeLogger\Middlewares;
 
-use Plenty\Log\Traits\Loggable;
+use Plenty\Plugin\Log\Loggable;
 use Plenty\Plugin\Http\Request;
 use Plenty\Plugin\Http\Response;
 use Plenty\Plugin\Middleware;
@@ -37,7 +37,7 @@ class RuntimeLoggerMiddleware extends Middleware
             "httpHost"      => $request->getHttpHost(),
             "requestUri"    => $request->getRequestUri(),
             "queryString"   => $request->getQueryString(),
-            "status"        => $response->getStatusCode()
+            "status"        => $response->status()
         ]);
         return $response;
     }
