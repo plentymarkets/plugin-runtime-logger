@@ -1,0 +1,26 @@
+{
+    "version"           : "1.0.0",
+    "name"              : "RuntimeLogger",
+    "marketplaceName"   : {"de": "RuntimeLogger","en": "RuntimeLogger"},
+    "license"           : "AGPL-3.0",
+    "pluginIcon"        : "icon_plugin_xs.png",
+    "price"             : 0.00,
+    "description"       : "Log runtime of every request",
+    "shortDescription"  : {"de": "Laufzeit-Tracking für Server-Anfragen","en": "Log runtime of every request"},
+    "categories"        : ["3517"],
+    "author"            : "plentymarkets GmbH",
+    "authorIcon"        : "icon_author_xs.png",
+    "email"             : "sales@plentymarkets.com",
+    "phone"             : "+49 561 98 681 100",
+
+    "keywords"          : ["plentymarkets", "plugins", "layout", "template"],
+    "type"              : "template",
+    "require"           : [],
+    "namespace"         : "RuntimeLogger",
+    "serviceProvider"   : "RuntimeLogger\\Providers\\RuntimeLoggerServiceProvider",
+    "javaScriptFiles"   : [],
+    "containers"        : [],
+    "dataProviders"     : [],
+    "dependencies"      : [],
+    "runOnBuild"        : []
+}
